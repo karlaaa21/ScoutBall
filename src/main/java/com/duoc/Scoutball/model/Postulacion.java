@@ -14,36 +14,20 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="equipos")
-public class equipos {
-     @Id
+@Table(name="Postulaciones")
+
+public class Postulacion {
+    
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer postulacion_id;
 
     @NotBlank
-    private String nombre_equipo;
+    private String estado;
+
+    
+    private String mensaje;
 
     @NotBlank
-    private String ubicacion;
-
-    @NotBlank
-    private String pais;
-
-    @NotBlank
-    private String liga;
-
-    @NotBlank
-    private String tecnico;
-
-    private Integer titulos;
-
-    @NotBlank
-    private String correo;
-
-    @NotBlank
-    private String numero_tlf;
-
-    private String  interes;
-
-
+    private int fecha_postulacion;
 }

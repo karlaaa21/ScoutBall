@@ -17,10 +17,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="jugadores")
 
-public class jugadores {
+public class Jugador {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer jugador_id;
 
     @NotBlank
     private String pnombre;
