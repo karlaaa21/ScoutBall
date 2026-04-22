@@ -1,9 +1,11 @@
 package com.duoc.Scoutball.model;
 
+import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -45,5 +47,7 @@ public class equipo {
 
     private String  interes;
 
+    @OneToMany
+    private List<Oferta>oferta;
 
 }

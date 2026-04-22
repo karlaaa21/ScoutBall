@@ -1,9 +1,10 @@
 package com.duoc.Scoutball.model;
-
+import java.util.List;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -38,7 +39,7 @@ public class Jugador {
     private String nacionalidad;
 
     @NotNull
-    private Integer fecha_nacimiento;
+    private String fecha_nacimiento;
 
     @NotBlank
     private String correo;
@@ -68,6 +69,8 @@ public class Jugador {
 
     private String equipo;
 
+    @OneToMany
+    private List<Oferta> oferta;
 
 
 
