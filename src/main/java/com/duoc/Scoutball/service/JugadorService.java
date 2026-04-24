@@ -4,7 +4,6 @@ import com.duoc.Scoutball.model.Jugador;
 import com.duoc.Scoutball.repository.jugadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Optional;
 import java.util.List;
 
 
@@ -21,7 +20,7 @@ public class JugadorService {
     public List<Jugador> getAllJugadores(){
         return jugadorRepository.findAll();
     }
-        public Jugador getJugadorId(Long jugador_id) {
+        public Jugador getJugadorId(Integer jugador_id) {
         return jugadorRepository.findById(jugador_id).orElse(null);
     }
 
@@ -31,7 +30,7 @@ public class JugadorService {
         }
         return jugadorRepository.save(jugador);
     }
-    public void deleteLibro(int id) {
+    public void deleteJugador(Integer id) {
         jugadorRepository.deleteById(id);
     }
 }
