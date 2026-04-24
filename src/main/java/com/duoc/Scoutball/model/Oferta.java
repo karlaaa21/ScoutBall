@@ -50,5 +50,5 @@ public class Oferta {
     private Jugador jugador;
 
     @ManyToOne
-    private List<equipo>equipo;
+    private List<Equipo>equipo;
 }
