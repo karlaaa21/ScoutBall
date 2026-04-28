@@ -1,17 +1,19 @@
 package com.duoc.Scoutball.service;
 
-import com.duoc.Scoutball.model.Jugador;
-import com.duoc.Scoutball.repository.jugadorRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.List;
+
+import com.duoc.Scoutball.model.Jugador;
+import com.duoc.Scoutball.repository.JugadorRepository;
 
 
 @Service
 public class JugadorService {
 
     @Autowired
-    private jugadorRepository jugadorRepository;
+    private JugadorRepository jugadorRepository;
 
     public Jugador saveJugador(Jugador jugador){
         return jugadorRepository.save(jugador);
