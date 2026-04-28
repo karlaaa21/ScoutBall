@@ -16,9 +16,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="equipos")
+@Table(name = "equipos")
 public class Equipo {
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer equipo_id;
 
@@ -45,9 +45,9 @@ public class Equipo {
     @NotBlank
     private String numero_tlf;
 
-    private String  interes;
+    private String interes;
 
     @OneToMany
-    private List<Oferta>oferta;
+    private List<Oferta> oferta;
 
 }
