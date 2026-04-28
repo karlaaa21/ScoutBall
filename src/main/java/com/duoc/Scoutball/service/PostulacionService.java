@@ -3,13 +3,13 @@ package com.duoc.Scoutball.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.duoc.Scoutball.model.Postulacion;
-import com.duoc.Scoutball.repository.postulacionRepository;
+import com.duoc.Scoutball.repository.PostulacionRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PostulacionService {
     @Autowired
-    private postulacionRepository   postulacionRepository  ;
+    private PostulacionRepository   postulacionRepository  ;
 
     public Postulacion savePostulacion(Postulacion postulacion){
         return postulacionRepository .save(postulacion);

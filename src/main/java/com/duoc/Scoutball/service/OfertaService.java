@@ -3,13 +3,13 @@ package com.duoc.Scoutball.service;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.duoc.Scoutball.model.Oferta;
-import com.duoc.Scoutball.repository.ofertaRepository;
+import com.duoc.Scoutball.repository.OfertaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OfertaService {
     @Autowired
-    private ofertaRepository   ofertaRepository  ;
+    private OfertaRepository   ofertaRepository  ;
 
     public Oferta saveOferta(Oferta oferta){
         return ofertaRepository .save(oferta);

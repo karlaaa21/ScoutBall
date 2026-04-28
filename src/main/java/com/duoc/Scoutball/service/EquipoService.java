@@ -1,7 +1,7 @@
 package com.duoc.Scoutball.service;
 
 import com.duoc.Scoutball.model.Equipo;
-import com.duoc.Scoutball.repository.equipoRepository;
+import com.duoc.Scoutball.repository.EquipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class EquipoService {
     @Autowired
-    private equipoRepository  equipoRepository ;
+    private EquipoRepository  equipoRepository ;
 
     public Equipo saveEquipo(Equipo equipo){
         return equipoRepository.save(equipo);
