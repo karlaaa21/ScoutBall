@@ -20,7 +20,7 @@ public class Postulacion {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer postulacion_id;
+    private Integer id;
 
     @NotBlank
     private String estado;

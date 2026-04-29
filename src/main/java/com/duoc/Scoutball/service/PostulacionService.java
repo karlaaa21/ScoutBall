@@ -24,7 +24,7 @@ public class PostulacionService {
     }
 
     public Postulacion updatePostulacion(Postulacion postulacion) {
-        if (!postulacionRepository .existsById(postulacion.getPostulacion_id())) {
+        if (!postulacionRepository .existsById(postulacion.getId())) {
             return null;
         }
         return postulacionRepository .save(postulacion);

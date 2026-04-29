@@ -36,7 +36,7 @@ public class OfertaController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Oferta> actualizarOferta(@PathVariable Integer id, @Valid @RequestBody Oferta oferta) {
-        oferta.setOferta_id(id);
+        oferta.setId(id);
         Oferta actualizado = ofertaService.updateOferta(oferta);
         if (actualizado == null) {
             return ResponseEntity.notFound().build();

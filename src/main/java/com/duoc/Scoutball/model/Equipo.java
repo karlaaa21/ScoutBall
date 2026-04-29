@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 public class Equipo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer equipo_id;
+    private Integer id;
 
     @NotBlank
     private String nombre_equipo;

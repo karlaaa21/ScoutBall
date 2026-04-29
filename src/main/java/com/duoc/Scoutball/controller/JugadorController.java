@@ -36,7 +36,7 @@ public class JugadorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Jugador> actualizarJugador(@PathVariable Integer id, @Valid @RequestBody Jugador jugador) {
-        jugador.setJugador_id(id);
+        jugador.setId(id);
         Jugador actualizado = jugadorService.updateJugador(jugador);
         if (actualizado == null) {
             return ResponseEntity.notFound().build();

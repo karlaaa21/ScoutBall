@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 public class Oferta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer oferta_id;
+    private Integer id;
 
     @NotBlank
     private int fecha_oferta;

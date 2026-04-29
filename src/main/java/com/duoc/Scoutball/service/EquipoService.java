@@ -24,7 +24,7 @@ public class EquipoService {
     }
 
     public Equipo updateEquipo(Equipo equipo) {
-        if (!equipoRepository.existsById(equipo.getEquipo_id())) {
+        if (!equipoRepository.existsById(equipo.getId())) {
             return null;
         }
         return equipoRepository.save(equipo);

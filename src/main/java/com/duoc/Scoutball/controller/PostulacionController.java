@@ -36,7 +36,7 @@ public class PostulacionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Postulacion> actualizarPostulacion(@PathVariable Integer id, @Valid @RequestBody Postulacion postulacion) {
-        postulacion.setPostulacion_id(id);
+        postulacion.setId(id);
         Postulacion actualizado = postulacionService.updatePostulacion(postulacion);
         if (actualizado == null) {
             return ResponseEntity.notFound().build();

@@ -36,7 +36,7 @@ public class EquipoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Equipo> actualizarEquipo(@PathVariable Integer id, @Valid @RequestBody Equipo equipo) {
-        equipo.setEquipo_id(id);
+        equipo.setId(id);
         Equipo actualizado = equipoService.updateEquipo(equipo);
         if (actualizado == null) {
             return ResponseEntity.notFound().build();
@@ -50,3 +50,5 @@ public class EquipoController {
         return ResponseEntity.noContent().build();
     }
 }
+
+

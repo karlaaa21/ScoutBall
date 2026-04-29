@@ -23,7 +23,7 @@ public class OfertaService {
     }
 
     public Oferta updateOferta(Oferta oferta) {
-        if (!ofertaRepository .existsById(oferta.getOferta_id())) {
+        if (!ofertaRepository .existsById(oferta.getId())) {
             return null;
         }
         return ofertaRepository .save(oferta);

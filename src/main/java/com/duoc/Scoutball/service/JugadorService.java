@@ -27,7 +27,7 @@ public class JugadorService {
     }
 
     public Jugador updateJugador(Jugador jugador) {
-        if (!jugadorRepository.existsById(jugador.getJugador_id())) {
+        if (!jugadorRepository.existsById(jugador.getId())) {
             return null;
         }
         return jugadorRepository.save(jugador);
