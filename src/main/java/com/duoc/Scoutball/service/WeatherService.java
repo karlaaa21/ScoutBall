@@ -3,6 +3,7 @@ package com.duoc.Scoutball.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import com.duoc.Scoutball.dto.WeatherDTO;
 
@@ -14,7 +15,7 @@ public class WeatherService {
     private WebClient weatherWebClient;
 
      public WeatherDTO obtenerClima(double latitude, double longitude) {
-        return weatherWebClient.get()
+        return  weatherWebClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path("/v1/forecast")
                         .queryParam("latitude", latitude)
