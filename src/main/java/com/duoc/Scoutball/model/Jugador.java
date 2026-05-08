@@ -56,11 +56,14 @@ public class Jugador {
     @NotBlank
     private String posicion;
 
-    @NotBlank
+    @NotNull
     private float altura;
 
-    @NotBlank
+    @NotNull
     private Float peso;
+
+    
+    private String sexo;
 
     @NotBlank
     private String pierna_habil;

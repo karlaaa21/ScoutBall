@@ -17,16 +17,19 @@ public class OfertaController {
 
     @GetMapping
     public ResponseEntity<List<Oferta>> listarOferta() {
+        System.out.println("[OfertaController] -> listarOferta");
         return ResponseEntity.ok(ofertaService.getAllOferta());
     }
 
     @PostMapping
     public ResponseEntity<Oferta> agregarOferta(@Valid @RequestBody Oferta oferta) {
+        System.out.println("[OfertaController] -> agregarOferta");
         return ResponseEntity.status(HttpStatus.CREATED).body(ofertaService.saveOferta(oferta));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Oferta> buscarOferta(@PathVariable Integer id) {
+        System.out.println("[OfertaController] -> buscarOferta id=" + id);
         Oferta oferta = ofertaService.getOfertaId(id);
         if (oferta== null) {
             return ResponseEntity.notFound().build();
@@ -36,6 +39,7 @@ public class OfertaController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Oferta> actualizarOferta(@PathVariable Integer id, @Valid @RequestBody Oferta oferta) {
+        System.out.println("[OfertaController] -> actualizarOfertaid=" + id);
         oferta.setId(id);
         Oferta actualizado = ofertaService.updateOferta(oferta);
         if (actualizado == null) {
@@ -46,6 +50,7 @@ public class OfertaController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarOferta(@PathVariable Integer id) {
+        System.out.println("[OfertaController] -> eliminarOferta id=" + id);
         ofertaService.deleteOferta(id);
         return ResponseEntity.noContent().build();
     }

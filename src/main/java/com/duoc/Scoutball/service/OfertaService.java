@@ -18,7 +18,7 @@ public class OfertaService {
     public List<Oferta> getAllOferta(){
         return ofertaRepository .findAll();
     }
-        public Oferta getOfertaId(Integer oferta_id) {
+    public Oferta getOfertaId(Integer oferta_id) {
         return ofertaRepository .findById(oferta_id).orElse(null);
     }
 

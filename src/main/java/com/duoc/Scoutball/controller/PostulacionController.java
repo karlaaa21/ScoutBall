@@ -17,16 +17,19 @@ public class PostulacionController {
 
     @GetMapping
     public ResponseEntity<List<Postulacion>> listarPostulacion() {
+        System.out.println("[PostulacionController] -> listarPostulacion");
         return ResponseEntity.ok(postulacionService.getAllPostulacion());
     }
 
     @PostMapping
     public ResponseEntity<Postulacion> agregarPostulacion(@Valid @RequestBody Postulacion postulacion) {
+        System.out.println("[PostulacionController] -> agregarPostulacion ");
         return ResponseEntity.status(HttpStatus.CREATED).body(postulacionService.savePostulacion(postulacion));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Postulacion> buscarPostulacion(@PathVariable Integer id) {
+        System.out.println("[PostulacionController] -> buscarPostulacion id=" + id);
         Postulacion postulacion = postulacionService.getPostulacionId(id);
         if (postulacion== null) {
             return ResponseEntity.notFound().build();
@@ -36,6 +39,7 @@ public class PostulacionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Postulacion> actualizarPostulacion(@PathVariable Integer id, @Valid @RequestBody Postulacion postulacion) {
+        System.out.println("[PostulacionController] -> actualizarPostulacionid=" + id);
         postulacion.setId(id);
         Postulacion actualizado = postulacionService.updatePostulacion(postulacion);
         if (actualizado == null) {
@@ -46,6 +50,7 @@ public class PostulacionController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarPostulacion(@PathVariable Integer id) {
+        System.out.println("[PostulacionController] -> eliminarPostulacion id=" + id);
         postulacionService.deletePostulacion(id);
         return ResponseEntity.noContent().build();
     }

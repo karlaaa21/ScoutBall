@@ -17,16 +17,19 @@ public class JugadorController {
 
     @GetMapping
     public ResponseEntity<List<Jugador>> listarJugador() {
+        System.out.println("[JugadorController] -> listarJugador");
         return ResponseEntity.ok(jugadorService.getAllJugadores());
     }
 
     @PostMapping
     public ResponseEntity<Jugador> agregarJugador(@Valid @RequestBody Jugador jugador) {
+        System.out.println("[JugadorController] -> agregarJugador");
         return ResponseEntity.status(HttpStatus.CREATED).body(jugadorService.saveJugador(jugador));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Jugador> buscarJugador(@PathVariable Integer id) {
+        System.out.println("[JugadorController] -> buscarJugador id=" + id);
         Jugador jugador = jugadorService.getJugadorId(id);
         if (jugador== null) {
             return ResponseEntity.notFound().build();
@@ -36,6 +39,7 @@ public class JugadorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Jugador> actualizarJugador(@PathVariable Integer id, @Valid @RequestBody Jugador jugador) {
+         System.out.println("[JugadorController] -> actualizarJugadorid=" + id);
         jugador.setId(id);
         Jugador actualizado = jugadorService.updateJugador(jugador);
         if (actualizado == null) {
@@ -46,6 +50,7 @@ public class JugadorController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarJugador(@PathVariable Integer id) {
+        System.out.println("[JugadorController] -> eliminarJugador id=" + id);
         jugadorService.deleteJugador(id);
         return ResponseEntity.noContent().build();
     }
