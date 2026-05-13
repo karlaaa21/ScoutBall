@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.duoc.Scoutball.dto.JugadorDetalleDTO;
 import com.duoc.Scoutball.model.Jugador;
 import com.duoc.Scoutball.repository.JugadorRepository;
 
@@ -35,4 +36,14 @@ public class JugadorService {
     public void deleteJugador(Integer id) {
         jugadorRepository.deleteById(id);
     }
+    public List<JugadorDetalleDTO> getJugadorDetalleDTO() {
+        return jugadorRepository.findAll().stream()
+                .map(l -> new JugadorDetalleDTO(
+                        l.getPnombre(),
+                        l.getAppaterno(),
+                        1.getequipo(),
+                        1.getposicion(),                   
+                ))
+                .toList();
+            }
 }
