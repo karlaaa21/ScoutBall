@@ -21,14 +21,13 @@ El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la 
 ---
 ## Arquitectura del proyecto
 El proyecto está organizado utilizando una arquitectura por capas, permitiendo una mejor separación de responsabilidades y organización del código.
-src/main/java/com/scoutball
-
+src/main/java/com/scoutball/
 ├── config/
 ├── controller/
 ├── dto/
 ├── model/
 ├── repository/
-├── service/
+└── service/
 ---
 ## Base de Datos
 El sistema utiliza la siguiente base de datos:
@@ -166,6 +165,7 @@ El sistema utiliza la siguiente base de datos:
         "salario": "1500 USD"
       }
       ```
+---
 *   **Actualizar oferta**
     *   **Método:** `PUT`
     *   **URL:** `/api/v1/oferta/{id}`
@@ -182,6 +182,7 @@ El sistema utiliza la siguiente base de datos:
         "salario": "3000 USD"
       }
       ```
+---
 *  **Eliminar oferta**
     *   **Método:** `DELETE`
     *   **URL:** `/api/v1/oferta/{id}`
@@ -222,18 +223,19 @@ El sistema utiliza la siguiente base de datos:
     *   **URL:** `/api/v1/postulacion/{id}`
     *   **Descripción:** Elimina permanentemente postulacion por su ID.
 ---
+
 * **#¿Como ejecutar el proyecto?**
   ## Paso 1:
   #### Debes clonar este repositorio en tu interpretador de codigo de preferencia que cuente con java
   ```tx https://github.com/karlaaa21/ScoutBall.git```
   ## Paso 2:
-  #### Inicia los servicios de MySQL (Laragon,XAMPP),utiliza HeidiSQL o tu cliente de base de datos preferido para verificar la conexión.
-  ##### - No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
+  ####Inicia los servicios de MySQL (Laragon,XAMPP),utiliza HeidiSQL o tu cliente de base de datos preferido para verificar la conexión.
+  #####- No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
 
   ## Paso 3:
   ## El proyecto es compatible con cualquier entorno que soporte Java:
-  #### -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
-  #### -ScoutBallApplication.java. y run Java.
+  ####-Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
+  ####-ScoutBallApplication.java. y run Java.
   
       
       
