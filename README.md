@@ -10,14 +10,13 @@ El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la 
 - Karla Miranda
 ---
 ## | Tecnología | Descripción |
-|:----------|:----------|
-| Java 17 | Desarrollo del sistema |
-| Spring Boot | Framework backend |
-| Spring Data JPA | Gestión de datos |
-| MySQL | Base de datos |
-| Maven | Administrador de dependencias |
-| Lombok | Simplificación del codigo mediane anotacioones |
-| Postman | Pruebas de endpoints |
+- Java 17 :  Desarrollo del sistema 
+- Spring Boot : Framework backend 
+- Spring Data JPA : Gestión de datos 
+- MySQL : Base de datos 
+- Maven : Administrador de dependencias 
+- Lombok : Simplificación del codigo mediane anotacioones 
+- Postman : Pruebas de endpoints 
 
 ---
 ## Arquitectura del proyecto
@@ -34,7 +33,7 @@ src/main/java/com/scoutball
 ## Base de Datos
 El sistema utiliza la siguiente base de datos:
 
-```tx scoutball```
+``` scoutball```
 
 ## Entidades principales
 - equipo
@@ -47,8 +46,9 @@ El sistema utiliza la siguiente base de datos:
 *   **Listar equipos:** `GET /api/v1/equipo` - Retorna todos los equipos.
 *   **Buscar por ID:** `GET /api/v1/equipo/{id}`
 *   **Crear equipo:** `POST /api/v1/equipo`
-    *   *Body JSON:*
-       `{
+    *   **Body JSON:**
+      ```json
+      {
         "nombre_equipo": "Real Madrid C.F.",
         "ubicacion": "Madrid",
         "pais": "España",
@@ -58,14 +58,16 @@ El sistema utiliza la siguiente base de datos:
         "correo": "contacto@realmadrid.com",
         "numero_tlf": "+34913984300",
         "interes": "Búsqueda de talentos jóvenes en Sudamérica",
-      }`
+      }
+      ```
 *   **Actualizar:** 
     *   **Método:** `PUT`
     *   **URL:** `/api/v1/equipo/{id}`
     *   **Descripción:** Permite modificar cualquier atributo del equipo.
     *   **Body JSON:**
-    *  *   *Body JSON:*
-        `{
+    *   **Body JSON:**
+      ```json
+      {
         "nombre_equipo": "Real Madrid C.F.",
         "ubicacion": "Madrid",
         "pais": "España",
@@ -75,7 +77,8 @@ El sistema utiliza la siguiente base de datos:
         "correo": "contacto@realmadrid.com",
         "numero_tlf": "+34913984300",
         "interes": "Búsqueda de talentos jóvenes en Sudamérica",
-      }`
+      }
+      ```
 *   **Eliminar:** 
     *   **Método:** `DELETE`
     *   **URL:** `/api/v1/equipo/{id}`
@@ -223,15 +226,15 @@ El sistema utiliza la siguiente base de datos:
 * #**¿Como ejecutar el proyecto?**
   ## Paso 1:
   ### Debes clonar este repositorio en tu interpretador de codigo de preferencia que cuente con java
-  ```tx https://github.com/karlaaa21/ScoutBall.git```7
+  ```tx https://github.com/karlaaa21/ScoutBall.git```
   ## Paso 2:
   ### Inicia los servicios de MySQL (Laragon,XAMPP),utiliza HeidiSQL o tu cliente de base de datos preferido para verificar la conexión.
   #### - No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
 
   ## Paso 3:
   ## El proyecto es compatible con cualquier entorno que soporte Java:
-  ## -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
-  ## -ScoutBallApplication.java. y run Java.
+  #### -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
+  #### -ScoutBallApplication.java. y run Java.
   
       
       
