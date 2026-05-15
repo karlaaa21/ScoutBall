@@ -9,8 +9,8 @@ El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la 
 - Claudio Escudero
 - Karla Miranda
 ---
-## |Tecnologia utilizada|
-|------------|-------------|
+## | Tecnología | Descripción |
+|:----------|:----------|
 | Java 17 | Desarrollo del sistema |
 | Spring Boot | Framework backend |
 | Spring Data JPA | Gestión de datos |
@@ -47,7 +47,8 @@ El sistema utiliza la siguiente base de datos:
 *   **Listar equipos:** `GET /api/v1/equipo` - Retorna todos los equipos.
 *   **Buscar por ID:** `GET /api/v1/equipo/{id}`
 *   **Crear equipo:** `POST /api/v1/equipo`
-    *   *Body JSON:* `{
+    *   *Body JSON:*
+       `{
         "nombre_equipo": "Real Madrid C.F.",
         "ubicacion": "Madrid",
         "pais": "España",
@@ -63,7 +64,8 @@ El sistema utiliza la siguiente base de datos:
     *   **URL:** `/api/v1/equipo/{id}`
     *   **Descripción:** Permite modificar cualquier atributo del equipo.
     *   **Body JSON:**
-    *  *   *Body JSON:* `{
+    *  *   *Body JSON:*
+        `{
         "nombre_equipo": "Real Madrid C.F.",
         "ubicacion": "Madrid",
         "pais": "España",
@@ -227,9 +229,9 @@ El sistema utiliza la siguiente base de datos:
   #### - No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
 
   ## Paso 3:
-  ### El proyecto es compatible con cualquier entorno que soporte Java:
-  ### -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
-  ### -ScoutBallApplication.java. y run Java.
+  ## El proyecto es compatible con cualquier entorno que soporte Java:
+  ## -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
+  ## -ScoutBallApplication.java. y run Java.
   
       
       
