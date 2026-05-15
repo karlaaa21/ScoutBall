@@ -1,7 +1,7 @@
 <img width="2000" height="860" alt="Red and White Dynamic Soccer Team Acrylic Tumbler" src="https://github.com/user-attachments/assets/c9d75fc8-93e7-4aad-b255-30372333585f" />
 
 ## Descripcion del proyecto
-###ScoutBall es un sistema orientado al fútbol donde jugadores pueden buscar equipos y equipos pueden encontrar nuevos talentos.
+### ScoutBall es un sistema orientado al fútbol donde jugadores pueden buscar equipos y equipos pueden encontrar nuevos talentos.
 El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la gestión de postulaciones, ofertas.
 ---
 ## Integrantes
@@ -21,6 +21,7 @@ El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la 
 ---
 ## Arquitectura del proyecto
 El proyecto está organizado utilizando una arquitectura por capas, permitiendo una mejor separación de responsabilidades y organización del código.
+```
 src/main/java/com/scoutball/
 ├── config/
 ├── controller/
@@ -28,6 +29,7 @@ src/main/java/com/scoutball/
 ├── model/
 ├── repository/
 └── service/
+```
 ---
 ## Base de Datos
 El sistema utiliza la siguiente base de datos:
@@ -226,16 +228,16 @@ El sistema utiliza la siguiente base de datos:
 
 * **#¿Como ejecutar el proyecto?**
   ## Paso 1:
-  #### Debes clonar este repositorio en tu interpretador de codigo de preferencia que cuente con java
+   Debes clonar este repositorio en tu interpretador de codigo de preferencia que cuente con java
   ```tx https://github.com/karlaaa21/ScoutBall.git```
   ## Paso 2:
-  ####Inicia los servicios de MySQL (Laragon,XAMPP),utiliza HeidiSQL o tu cliente de base de datos preferido para verificar la conexión.
-  #####- No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
+   Inicia los servicios de MySQL (Laragon,XAMPP),utiliza HeidiSQL o tu cliente de base de datos preferido para verificar la conexión.
+   - No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
 
   ## Paso 3:
   ## El proyecto es compatible con cualquier entorno que soporte Java:
-  ####-Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
-  ####-ScoutBallApplication.java. y run Java.
+   -Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
+   -ScoutBallApplication.java. y run Java.
   
       
       
