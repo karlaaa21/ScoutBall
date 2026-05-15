@@ -1,5 +1,6 @@
 package com.duoc.Scoutball.controller;
 
+import com.duoc.Scoutball.dto.EquipoDetalleDTO;
 import com.duoc.Scoutball.model.Equipo;
 import com.duoc.Scoutball.service.EquipoService;
 import jakarta.validation.Valid;
@@ -8,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/v1/equipo")
@@ -54,6 +56,16 @@ public class EquipoController {
         equipoService.deleteEquipo(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/detalle-equipo")
+    public ResponseEntity<List<EquipoDetalleDTO>> getEquipoDetalleDTO() {
+        System.out.println("[EquipoController] -> equipoDetalle");
+        return ResponseEntity.ok(equipoService.getEquipoDetalleDTO());
+    }
+    
+
+
+
 }
 
 

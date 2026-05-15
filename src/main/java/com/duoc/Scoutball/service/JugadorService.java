@@ -38,11 +38,15 @@ public class JugadorService {
     }
     public List<JugadorDetalleDTO> getJugadorDetalleDTO() {
         return jugadorRepository.findAll().stream()
-                .map(l -> new JugadorDetalleDTO(
-                        l.getPnombre(),
-                        l.getAppaterno(),
-                        1.getequipo(),
-                        1.getposicion(),                   
+                .map(jugador -> new JugadorDetalleDTO(
+                        jugador.getPnombre(),
+                        jugador.getAppaterno(),
+                        jugador.getEquipo(),
+                        jugador.getPosicion()
+                        
+                        
+                        
+                                         
                 ))
                 .toList();
             }

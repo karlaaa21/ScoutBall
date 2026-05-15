@@ -1,5 +1,6 @@
 package com.duoc.Scoutball.service;
 
+import com.duoc.Scoutball.dto.EquipoDetalleDTO;
 import com.duoc.Scoutball.model.Equipo;
 import com.duoc.Scoutball.repository.EquipoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +33,20 @@ public class EquipoService {
     public void deleteEquipo(Integer id) {
         equipoRepository.deleteById(id);
     }
+
+     public List<EquipoDetalleDTO> getEquipoDetalleDTO() {
+        return equipoRepository.findAll().stream()
+                .map(equipo -> new EquipoDetalleDTO(
+                        equipo.getTecnico(),
+                        equipo.getNombre_equipo()
+                ))
+                .toList();
+    }
+
+
+
 }
+
+
+
 

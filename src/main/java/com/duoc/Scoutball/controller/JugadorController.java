@@ -59,8 +59,8 @@ public class JugadorController {
 
     @GetMapping("/jugador-detalles")
     public ResponseEntity<List<JugadorDetalleDTO>> JugadorDetalleDTO () {
-        System.out.println("[JugadorController] -> JugadorDetalleDTO");
-        return ResponseEntity.ok(JugadorService.getJugadorDetalleDTO());
+        System.out.println("[JugadorController] -> JugadorDetalle");
+        return ResponseEntity.ok(jugadorService.getJugadorDetalleDTO());
     }
 
 

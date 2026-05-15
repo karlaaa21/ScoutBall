@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class JugadorDetalleDTO {
+    
     private String pnombre;
     private String appaterno;
     private String equipo;
