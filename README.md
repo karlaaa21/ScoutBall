@@ -2,7 +2,7 @@
 
 ## Descripcion del proyecto
 
-ScoutBall es un sistema orientado al fútbol donde jugadores pueden buscar equipos y equipos pueden encontrar nuevos talentos.
+- ScoutBall es un sistema orientado al fútbol donde jugadores pueden buscar equipos y equipos pueden encontrar nuevos talentos.
 El proyecto busca facilitar la conexión entre futbolistas y clubes mediante la gestión de postulaciones, ofertas.
 
 ---
@@ -237,7 +237,7 @@ El sistema utiliza la siguiente base de datos:
    - No te preocupes por las tablas, hibernate se encargara de de mapear y crear la arquitectura automaticamente al arrancar.
 
   ## Paso 3:
-  ## El proyecto es compatible con cualquier entorno que soporte Java:
+   El proyecto es compatible con cualquier entorno que soporte Java:
    - Localiza la clase principal dentro de la ruta: src/main/java/com/scoutball/ScoutBallApplication.java.
    - ScoutBallApplication.java. y run Java.
   
