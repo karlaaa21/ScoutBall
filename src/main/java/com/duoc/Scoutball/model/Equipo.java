@@ -9,13 +9,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
+import lombok.Builder;
+//import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
+//import lombok.NoArgsConstructor;
+@Builder
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "equipos")
 public class Equipo {
@@ -47,8 +46,9 @@ public class Equipo {
     private String numero_tlf;
 
     private String interes;
-
+    
     @OneToMany
     private List<Oferta> oferta;
+
 
 }

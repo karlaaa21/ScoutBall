@@ -2,6 +2,7 @@ package com.duoc.Scoutball.controller;
 
 import com.duoc.Scoutball.model.Jugador;
 import com.duoc.Scoutball.model.Equipo;
+import com.duoc.Scoutball.model.Oferta;
 import com.duoc.Scoutball.service.JugadorService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,6 +12,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
+import java.util.ArrayList;
+import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
 class JugadorControllerTest {
@@ -19,11 +22,18 @@ class JugadorControllerTest {
   @InjectMocks
   private JugadorController jugadorController;
   @Test
+
+ 
   void crearJugador_retorna201_cuandoExisteJugador() {
+
+
+  
     // Vamos a verificar que el método agregarLibro del controlador funciona correctamente
     // Para ello crearfemos un libro con un autor válido y simularemos el comportamiento del servicio
-    Equipo equipo = new Equipo(1,"Real Madrid C.F.","Madrid","España","LaLiga","Carlo Ancelotti",36,"contacto@realmadrid.com","+34913984300","Búsqueda de talentos jóvenes en Sudamérica");
-    Jugador jugador = new Jugador(1,"Cristiano","Ronaldo","Do santos","Aveiro","Portuguesa","1985-02-05","Cristiano.Ronaldo@example.com","+351845944984","Funchal, Madeira , portugal","Delantero con amplia experiencia internacional y gran regate.","Extremo / Delantero",1.87,75.0,"Masculino","ambidiestro","Jorge Mendes","All nassar");
+    Equipo equipo = Equipo.builder()
+   .id(1) .nombre_equipo("Real madrid") .ubicacion("Madrid") .pais("España") .liga("La liga") .tecnico("Carlo Ancelotti") .titulos(36) .correo("kjasjkasja") .numero_tlf("+34910247520") .interes("buenos") .build();
+    Jugador jugador = Jugador.builder()
+    .id(1) .pnombre("Cristiano") .snombre("Ronaldo") .appaterno("Do santos") .apmaterno("Aveiro") .nacionalidad("Portuguesa") .fecha_nacimiento("1985-02-05") .correo("akjsakjskjaskj") .numero_tlf("+251420304") .direccion("portugal") .sobre_mi("akjsjas") .posicion("delantero") .altura(1.80f) .peso(80.0f) .sexo("Masculino") .build();
     // ""Simulamos""el comportamiento del servicio (mock):
     // Así evitamos acceder a base de datos en una prueba unitaria.
     // Cuando el servicio intente guardar el libro, le decimos que devuelva el mismo libro (como si lo hubiera guardado).
