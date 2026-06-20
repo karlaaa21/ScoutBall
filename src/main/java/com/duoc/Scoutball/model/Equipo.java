@@ -10,10 +10,12 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
-//import lombok.AllArgsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-//import lombok.NoArgsConstructor;
+import lombok.NoArgsConstructor;
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "equipos")

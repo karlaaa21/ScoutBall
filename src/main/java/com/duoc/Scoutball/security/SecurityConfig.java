@@ -45,7 +45,7 @@ public class SecurityConfig {
                 // Endpoints de autenticación: públicos (no requieren token)
                 .requestMatchers("/api/v1/auth/**").permitAll()
 
-                             .requestMatchers(
+                    .requestMatchers(
                     "/swagger-ui/**",
                     "/swagger-ui.html",
                     "/v3/api-docs/**"

@@ -1,572 +1,610 @@
 {
-	"info": {
-		"_postman_id": "86fe599f-cc4b-493b-b814-c44c9a182a9b",
-		"name": "SCOUTBALL",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Obtener equipo",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo"
-					]
-				},
-				"description": "Retorna a todos los equipos."
-			},
-			"response": []
-		},
-		{
-			"name": "Agregar Equipo",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo"
-					]
-				},
-				"description": "Crea un nuevo equipo."
-			},
-			"response": []
-		},
-		{
-			"name": "Buscar equipo por id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo",
-						""
-					]
-				},
-				"description": "Busca un equipo ya creado por id."
-			},
-			"response": []
-		},
-		{
-			"name": "Actualizar equipor por id",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo",
-						""
-					]
-				},
-				"description": "Actualiza los datos de un equipo ya creado por el id."
-			},
-			"response": []
-		},
-		{
-			"name": "Borrar equipo por id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo",
-						""
-					]
-				},
-				"description": "Borra un equipo creado por el id."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener detalles de equipos (DTO)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/equipo/detalle-equipo",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"equipo",
-						"detalle-equipo"
-					]
-				},
-				"description": "Retorna una lista proyectada con solo el nombre del tecnico y el nombre del equipo."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener jugador",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores"
-					]
-				},
-				"description": "Retorna a todos los jugadores."
-			},
-			"response": []
-		},
-		{
-			"name": "Agregar jugador",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores"
-					]
-				},
-				"description": "Crea un jugador nuevo."
-			},
-			"response": []
-		},
-		{
-			"name": "Buscar jugador por id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores",
-						""
-					]
-				},
-				"description": "Busca un jugador existente por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Actualizar Jugador por id",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores",
-						""
-					]
-				},
-				"description": "Actualiza los datos de un jugador existente por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Borrar Jugador por id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores",
-						""
-					]
-				},
-				"description": "Borra a un jugador existente por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener detalles de jugadores (DTO)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/jugadores/jugador-detalles",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"jugadores",
-						"jugador-detalles"
-					]
-				},
-				"description": "Retorna una lista proyectada con el primer nombre, apellido paterno,equipo y posicion de los jugadores."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener ofertas",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/oferta",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"oferta"
-					]
-				},
-				"description": "Retorna todas las ofertas."
-			},
-			"response": []
-		},
-		{
-			"name": "Agregar oferta",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/oferta",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"oferta"
-					]
-				},
-				"description": "Crea una oferta."
-			},
-			"response": []
-		},
-		{
-			"name": "Buscar ofertas por id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/oferta/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"oferta",
-						""
-					]
-				},
-				"description": "Busca una oferta existente por el id."
-			},
-			"response": []
-		},
-		{
-			"name": "Actualizar oferta por id",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/oferta/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"oferta",
-						""
-					]
-				},
-				"description": "Actualiza una oferta existente por el id."
-			},
-			"response": []
-		},
-		{
-			"name": "Borrar oferta por id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/oferta/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"oferta",
-						""
-					]
-				},
-				"description": "Borra una oferta existente por el id."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener postulaciones",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/postulacion",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"postulacion"
-					]
-				},
-				"description": "Retorna todas las postulaciones."
-			},
-			"response": []
-		},
-		{
-			"name": "Agregar Postulación",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/postulacion",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"postulacion"
-					]
-				},
-				"description": "Crea una nueva postulación."
-			},
-			"response": []
-		},
-		{
-			"name": "Buscar Postulación por id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/postulacion/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"postulacion",
-						""
-					]
-				},
-				"description": "Busca una postulación por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Actualizar Postulación por id",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/postulacion/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"postulacion",
-						""
-					]
-				},
-				"description": "Actualiza una postulación por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Borrar Postulación por id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/postulacion/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"postulacion",
-						""
-					]
-				},
-				"description": "Borra una postulación por su id."
-			},
-			"response": []
-		},
-		{
-			"name": "Obtener Clima (API externa)",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/clima",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"clima"
-					]
-				},
-				"description": "Devuelve el clima actual de Santiago de Chile usando la API Open-Meteo."
-			},
-			"response": []
-		},
-		{
-			"name": "crear usuario token",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "/api/v1/auth/register",
-					"path": [
-						"api",
-						"v1",
-						"auth",
-						"register"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "login",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "7b8e8d01-ff90-4a67-8d69-45147c152095",
+    "name": "SCOUTBALL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53628671",
+    "_collection_link": "https://go.postman.co/collection/53628671-7b8e8d01-ff90-4a67-8d69-45147c152095?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Autenticación",
+      "item": [
+        {
+          "name": "crear usuario token",
+          "request": {
+            "auth": {
+              "type": "bearer"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"PruebaUsuario\",\r\n    \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"Scoutball123\",\r\n    \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Obtener equipo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo"
+          ]
+        },
+        "description": "Retorna a todos los equipos."
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Equipo",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo"
+          ]
+        },
+        "description": "Crea un nuevo equipo."
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar equipo por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo",
+            ""
+          ]
+        },
+        "description": "Busca un equipo ya creado por id."
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar equipor por id",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo",
+            ""
+          ]
+        },
+        "description": "Actualiza los datos de un equipo ya creado por el id."
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar equipo por id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo",
+            ""
+          ]
+        },
+        "description": "Borra un equipo creado por el id."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener detalles de equipos (DTO)",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/equipo/detalle-equipo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "equipo",
+            "detalle-equipo"
+          ]
+        },
+        "description": "Retorna una lista proyectada con solo el nombre del tecnico y el nombre del equipo."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener jugador",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores"
+          ]
+        },
+        "description": "Retorna a todos los jugadores."
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar jugador",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores"
+          ]
+        },
+        "description": "Crea un jugador nuevo."
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar jugador por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores",
+            ""
+          ]
+        },
+        "description": "Busca un jugador existente por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Jugador por id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores",
+            ""
+          ]
+        },
+        "description": "Actualiza los datos de un jugador existente por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar Jugador por id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores",
+            ""
+          ]
+        },
+        "description": "Borra a un jugador existente por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener detalles de jugadores (DTO)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/jugadores/jugador-detalles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "jugadores",
+            "jugador-detalles"
+          ]
+        },
+        "description": "Retorna una lista proyectada con el primer nombre, apellido paterno,equipo y posicion de los jugadores."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener ofertas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/oferta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "oferta"
+          ]
+        },
+        "description": "Retorna todas las ofertas."
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar oferta",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/oferta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "oferta"
+          ]
+        },
+        "description": "Crea una oferta."
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar ofertas por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/oferta/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "oferta",
+            ""
+          ]
+        },
+        "description": "Busca una oferta existente por el id."
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar oferta por id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/oferta/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "oferta",
+            ""
+          ]
+        },
+        "description": "Actualiza una oferta existente por el id."
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar oferta por id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/oferta/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "oferta",
+            ""
+          ]
+        },
+        "description": "Borra una oferta existente por el id."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener postulaciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/postulacion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "postulacion"
+          ]
+        },
+        "description": "Retorna todas las postulaciones."
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Postulación",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/postulacion",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "postulacion"
+          ]
+        },
+        "description": "Crea una nueva postulación."
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Postulación por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/postulacion/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "postulacion",
+            ""
+          ]
+        },
+        "description": "Busca una postulación por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Postulación por id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/postulacion/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "postulacion",
+            ""
+          ]
+        },
+        "description": "Actualiza una postulación por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Borrar Postulación por id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/postulacion/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "postulacion",
+            ""
+          ]
+        },
+        "description": "Borra una postulación por su id."
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Clima (API externa)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/clima",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "clima"
+          ]
+        },
+        "description": "Devuelve el clima actual de Santiago de Chile usando la API Open-Meteo."
+      },
+      "response": []
+    }
+  ]
 }

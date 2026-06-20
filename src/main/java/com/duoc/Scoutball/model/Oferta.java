@@ -1,5 +1,4 @@
 package com.duoc.Scoutball.model;
-import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -52,5 +51,5 @@ public class Oferta {
     private Jugador jugador;
 
     @ManyToOne
-    private List<Equipo>equipo;
+    private  Equipo equipo;
 }
