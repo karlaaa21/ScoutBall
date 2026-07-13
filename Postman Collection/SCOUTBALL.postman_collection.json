@@ -20,7 +20,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"username\": \"PruebaUsuario\",\r\n    \"password\": \"123456\"\r\n}",
+              "raw": "{\r\n    \"username\": \"Scoutball\",\r\n    \"password\": \"12345\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -28,12 +28,14 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8080/api/v1/auth/register",
-              "protocol": "http",
+              "raw": "https://scoutball-production.up.railway.app/api/v1/auth/register",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "scoutball-production",
+                "up",
+                "railway",
+                "app"
               ],
-              "port": "8080",
               "path": [
                 "api",
                 "v1",
@@ -51,7 +53,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"username\": \"Scoutball123\",\r\n    \"password\": \"123456\"\r\n}",
+              "raw": "{\r\n    \"username\": \"Scoutball\",\r\n    \"password\": \"12345\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -59,12 +61,14 @@
               }
             },
             "url": {
-              "raw": "http://localhost:8080/api/v1/auth/login",
-              "protocol": "http",
+              "raw": "https://scoutball-production.up.railway.app/api/v1/auth/login",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "scoutball-production",
+                "up",
+                "railway",
+                "app"
               ],
-              "port": "8080",
               "path": [
                 "api",
                 "v1",
@@ -80,15 +84,20 @@
     {
       "name": "Obtener equipo",
       "request": {
+        "auth": {
+          "type": "bearer"
+        },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -108,12 +117,14 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -130,12 +141,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -156,12 +169,14 @@
         "method": "PUT",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -179,12 +194,14 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -205,12 +222,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/equipo/detalle-equipo",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/equipo/detalle-equipo",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -228,12 +247,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -250,12 +271,14 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -272,12 +295,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -295,12 +320,14 @@
         "method": "PUT",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -318,12 +345,14 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -341,12 +370,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/jugadores/jugador-detalles",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/jugadores/jugador-detalles",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -364,12 +395,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/oferta",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/oferta",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -386,12 +419,14 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/oferta",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/oferta",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -408,12 +443,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/oferta/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/oferta/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -431,12 +468,14 @@
         "method": "PUT",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/oferta/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/oferta/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -454,12 +493,14 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/oferta/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/oferta/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -477,12 +518,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/postulacion",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/postulacion",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -499,12 +542,14 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/postulacion",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/postulacion",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -521,12 +566,14 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/postulacion/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/postulacion/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -544,12 +591,14 @@
         "method": "PUT",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/postulacion/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/postulacion/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -567,12 +616,14 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/postulacion/",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/postulacion/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -587,15 +638,27 @@
     {
       "name": "Obtener Clima (API externa)",
       "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0j5e}}",
+              "type": "string"
+            }
+          ]
+        },
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/api/v1/clima",
-          "protocol": "http",
+          "raw": "https://scoutball-production.up.railway.app/api/v1/clima",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "scoutball-production",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "8080",
           "path": [
             "api",
             "v1",
@@ -605,6 +668,39 @@
         "description": "Devuelve el clima actual de Santiago de Chile usando la API Open-Meteo."
       },
       "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_secret_0j5e",
+      "secret": true
     }
   ]
 }
